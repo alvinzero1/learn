@@ -1,1 +1,3 @@
-# z1learn
+# z1/learn
+
+For reference only.
