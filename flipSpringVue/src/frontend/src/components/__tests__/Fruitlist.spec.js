@@ -5,6 +5,8 @@ import FruitList from '@/components/fruitList.vue'
 
 describe('FruitList component test', () => {
 
+
+
     test("tests data attributes", () => {
         const wrapper = shallowMount(FruitList)
         expect(wrapper.vm.fruits).toEqual(["apple", "banana", "orange"]);
@@ -38,18 +40,30 @@ describe('FruitList component test', () => {
 
         // add mango to the fruit list
         vm.addFruit('mango')
+        console.log("> FruitList.fruits > " + vm.numFruits)
 
         expect(vm.fruits.length).toBe(4)
     })
 
+    // Need tp quit and restart to update
+    test('displays of fruits', () => {
+        const wrapper = shallowMount(FruitList)
+        console.log("> html > " + wrapper.html())
+        expect(wrapper.html()).toMatchSnapshot() // <<<<< snapshot
+    })
+
     test('my test all', () => {
         const wrapper = shallowMount(FruitList)
-
         const vm = wrapper.vm
         expect(vm.fruits).toEqual(["apple", "banana", "orange"])
         expect(vm.numFruits).toBe(3)
         vm.addFruit('mango')
         expect(vm.fruits.length).toBe(4)
+
+        vm.fruits = (["aaa", "bbb"])
+        console.log("> vm.fruits > " + vm.fruits)
+        expect(vm.fruits).toEqual(["aaa", "bbb"])
+        expect(vm.numFruits).toBe(2)
     })
 
 })

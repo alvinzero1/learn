@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import DisplayJson from './components/DisplayJson.vue'
+import FruitList from './components/FruitList.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import DisplayJson from './components/DisplayJson.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <DisplayJson />
+      <FruitList />
     </div>
   </header>
 
