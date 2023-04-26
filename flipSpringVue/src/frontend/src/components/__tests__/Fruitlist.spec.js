@@ -3,9 +3,16 @@ import { describe, test, expect } from 'vitest' // <<  define `test`
 import { shallowMount } from '@vue/test-utils'
 import FruitList from '@/components/fruitList.vue'
 
+// ref to learn/vitestdemo/src/components/__tests__/basic.test.js
 describe('FruitList component test', () => {
+    test('normal imports as expected', async () => {
+        const cmp = await import('@/components/fruitList.vue')
+        expect(cmp).toBeDefined()
+    })
 
-
+    test('shallowMount component', async () => {
+        expect(FruitList).toBeTruthy()  // <<<<< test available?
+    })
 
     test("tests data attributes", () => {
         const wrapper = shallowMount(FruitList)
@@ -46,6 +53,7 @@ describe('FruitList component test', () => {
     })
 
     // Need tp quit and restart to update
+    // Will auto create for the first time !
     test('displays of fruits', () => {
         const wrapper = shallowMount(FruitList)
         console.log("> html > " + wrapper.html())
