@@ -2,7 +2,20 @@
 *.class
 
 # Log file
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
 
 # BlueJ files
 *.ctxt
@@ -22,3 +35,45 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# from flipSpringVue
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
