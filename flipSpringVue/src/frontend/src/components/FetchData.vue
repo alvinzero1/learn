@@ -1,6 +1,7 @@
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref, watch } from 'vue'
 
+const msgId = ref(1)
 const msg = ref(null)
 
 // https://vuejs.org/tutorial/#step-10
@@ -13,13 +14,13 @@ async function fetchData() {
     console.log(">>>>>" + msg.value)
 }
 
-// fetchData()
-watchEffect(fetchData)
-
+fetchData()
+watch(msgId, fetchData)
 </script>
 
 <template>
     <div>
+        <p>msg id: {{ msgId }}</p>
         <h3>msg: {{ msg }}</h3>
     </div>
 </template>

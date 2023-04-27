@@ -4,6 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 import DisplayJson from './components/DisplayJson.vue'
 import FruitList from './components/FruitList.vue';
 import FetchData from './components/FetchData.vue'
+import Watchers from './components/Watchers.vue'
 
 </script>
 
@@ -23,6 +24,9 @@ import FetchData from './components/FetchData.vue'
 
       Fetchdata:
       <FetchData />
+
+      Watchers:
+      <Watchers />
     </div>
   </header>
 

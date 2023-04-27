@@ -4,6 +4,13 @@ import { ref } from 'vue'
 const text = ref('')
 const msg = ref('')
 const inputMsg = ref('')
+
+function increment(current, max = 10) {
+    if (current < max) {
+        return current + 1
+    }
+    return current
+}
 </script>
 
 <template>
