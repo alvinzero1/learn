@@ -3,6 +3,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import DisplayJson from './components/DisplayJson.vue'
 import FruitList from './components/FruitList.vue';
+import FetchData from './components/FetchData.vue'
+
 </script>
 
 <template>
@@ -10,9 +12,17 @@ import FruitList from './components/FruitList.vue';
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
+      HelloWorld:
       <HelloWorld msg="You did it!" />
+
+      DisplayJson:
       <DisplayJson />
+
+      FruitList:
       <FruitList />
+
+      Fetchdata:
+      <FetchData />
     </div>
   </header>
 
