@@ -1,4 +1,4 @@
-package com.zero1.locale.localeex;
+package com.zero1.locale;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -23,6 +23,7 @@ public class DataInput_With_Locale {
 
         System.out.println(" Locale finalized :::: " + locale.getDisplayLanguage());
 
+        //eg learn\flipSpringVue\src\main\resources\bundles\Msg_Bundle_en_US.properties
         ResourceBundle msgs = ResourceBundle.getBundle("bundles.Msg_Bundle", locale);
 
         System.out.print(msgs.getObject("fname") + " : ");

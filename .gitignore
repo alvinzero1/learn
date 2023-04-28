@@ -78,3 +78,4 @@ build/
 *.sln
 *.sw?
 /n/LocaleEx/nbproject/private/
+/.metadata/

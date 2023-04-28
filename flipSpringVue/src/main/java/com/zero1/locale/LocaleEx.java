@@ -1,5 +1,5 @@
-// https://github.com/alvintwng/ntucLH/blob/master/mACapStoneProj3/LocaleEx/localeex/LocaleEx.java
-package com.zero1.locale.localeex;
+// .../mACapStoneProj3/LocaleEx/localeex/LocaleEx.java
+package com.zero1.locale;
 
 import java.util.Locale;
 
@@ -24,13 +24,28 @@ public class LocaleEx {
         System.out.println(" Locale PRC :: " + Locale.PRC);
         System.out.println(" Locale CHINESE :: " + Locale.CHINESE);
 
+        
+        locale = new Locale("fr");
+        System.out.println(" Locale :: " + locale);
+
+        locale = new Locale("en", "US");
+        System.out.println(" Locale :: " + locale);
+
+        locale = new Locale("en", "US", "NY");
+        System.out.println(" Locale :: " + locale);
+        System.out.println(" Display Language : " + locale.getDisplayLanguage());
+
+        locale = new Locale("zh");
+        System.out.println(" Locale :: " + locale);
+        System.out.println(" Display Language : " + locale.getDisplayLanguage());
+
     }
 }
 
 /*
  * Sample dialogue
- Country : Singapore
- Display Language : English
+Country : Singapore
+ Display Language : English        
  Display Name : English (Singapore)
  ISO Country Code : SGP
  ISO Lang Code : eng
@@ -43,4 +58,10 @@ public class LocaleEx {
  Locale CHINA :: zh_CN
  Locale PRC :: zh_CN
  Locale CHINESE :: zh
+ Locale :: fr
+ Locale :: en_US
+ Locale :: en_US_NY
+ Display Language : English
+ Locale :: zh
+ Display Language : Chinese
  */
