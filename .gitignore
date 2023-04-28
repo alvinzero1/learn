@@ -77,3 +77,4 @@ build/
 *.njsproj
 *.sln
 *.sw?
+/n/LocaleEx/nbproject/private/
