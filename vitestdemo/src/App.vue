@@ -1,11 +1,12 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
+import HelloWorld from './components/HelloWorld.vue'
+//import TheWelcome from './components/TheWelcome.vue'
 import MyExVue from './components/MyEx.vue';
+import VueWatchersBasic from './components/VueWatchersBasic.vue'
+import CallMethodIf from './components/CallMethodIf.vue'
 </script>
 
 <template>
-  <!-- 
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
@@ -14,11 +15,18 @@ import MyExVue from './components/MyEx.vue';
     </div>
   </header>
 
-  <main>
+  <!-- <main>
     <TheWelcome />
-  </main>
--->
-  <MyExVue />
+  </main> -->
+  <div>
+    <MyExVue />
+  </div>
+  <h2>
+    <VueWatchersBasic />
+  </h2>
+  <h2>
+    <CallMethodIf />
+  </h2>
 </template>
 
 <style scoped>

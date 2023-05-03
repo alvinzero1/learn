@@ -11,6 +11,9 @@ describe('HelloWorld', () => {
       },
     })
 
+    console.log(">>>>> " + wrapper.text())
+    // >>>>> Hello Vitest You’ve successfully created a project with Vite + Vue 3.
+    
     expect(wrapper.text()).toContain('Hello Vitest')
   })
 })
