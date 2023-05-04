@@ -13,3 +13,12 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 [2]: https://en.wikipedia.org
 
+[top]: topOfThePage
+
+a
+
+a
+
+a
+
+[:top: Top](#top)
