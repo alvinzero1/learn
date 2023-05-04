@@ -14,17 +14,17 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 [2]: https://en.wikipedia.org
 
 [top]: topOfThePage
-
+[topb]: topOfThePage
 a
 
 a
 
 a
 
-[:top: Top](#top)
+A [:top: Top](#top)
 
-[:top:](#top)
+A [:top:](#top)
 
-[:top: Top][top]
+B [:top: Top][topb]
 
-[Top][top]
+B [Top][topb]
