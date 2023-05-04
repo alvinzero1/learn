@@ -15,12 +15,15 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 [2]: https://en.wikipedia.org
 
 [top]: topOfThePage
+`[top]: topOfThePage`
 [topb]: #note
-a
+`[topb]: #test`
 
-a
+---
 
-a
+---
+
+---
 
 `[:top: Top](#top)` [:top: Top](#top)
 
@@ -28,4 +31,4 @@ a
 
 `[:top:][topb]` [:top:][topb]
 
-### note
+### test
