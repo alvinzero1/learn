@@ -22,3 +22,9 @@ a
 a
 
 [:top: Top](#top)
+
+[:top:](#top)
+
+[:top: Top][top]
+
+[Top][top]
