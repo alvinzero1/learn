@@ -1,3 +1,4 @@
+
 https://www.markdownguide.org/basic-syntax/
 
 
@@ -14,7 +15,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 [2]: https://en.wikipedia.org
 
 [top]: topOfThePage
-[topb]: topOfThePage
+[topb]: #note
 a
 
 a
@@ -25,5 +26,6 @@ a
 
 `[:top:](#top)` [:top:](#top)
 
-`[:top:][top]` [:top:][top]
+`[:top:][topb]` [:top:][topb]
 
+### note
