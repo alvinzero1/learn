@@ -21,10 +21,9 @@ a
 
 a
 
-A [:top: Top](#top)
+`[:top: Top](#top)` [:top: Top](#top)
 
-A [:top:](#top)
+`[:top:](#top)` [:top:](#top)
 
-B [:top: Top][topb]
+`[:top:][top]` [:top:][top]
 
-B [Top][topb]
